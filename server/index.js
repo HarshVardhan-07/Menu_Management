@@ -12,7 +12,7 @@ Connection();
 
 
 //App routes
-app.use("/", router);
+app.use("/api", router);
 
 
 app.listen(3000,() => {
