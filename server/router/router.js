@@ -14,7 +14,7 @@ router.get("/categories/search",getCatgeoryByIdOrName)
 
 router.post("/createcategory",createCategory );
 
-router.patch("/categories/:categoryId", editCategory);
+router.put("/categories/:categoryId", editCategory);
 
 router.delete("/categories/:categoryId",deleteCategory);
 
@@ -26,7 +26,7 @@ router.get("/subcategories/search",getSubcatagoryByNameOrId);
 
 router.post("/categories/:categoryId/subcategories", createSubcategory );
 
-router.patch("/categories/:categoryId/subcategories/:subcategoryId", editSubcategory);
+router.put("/categories/:categoryId/subcategories/:subcategoryId", editSubcategory);
 
 router.delete("/categories/:categoryId/subcategories/:subcategoryId",deleteSubcategory);
 
@@ -40,7 +40,7 @@ router.get("/items/search",getItemsByIdOrName)
 
 router.post("/categories/:categoryId/subcategories/:subCategoryId",createItem);
 
-router.patch("/categories/:categoryId/subcategories/:subcategoryId/items/:itemId",updateItem);
+router.put("/categories/:categoryId/subcategories/:subcategoryId/items/:itemId",updateItem);
 router.delete("/categories/:categoryId/subcategories/:subcategoryId/items/:itemId",deleteItem);
 
 
